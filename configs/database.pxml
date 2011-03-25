@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<px>
+
+    <!-- データベース設定 -->
+    <database>
+
+        <!-- default -->
+        <connection name="default">
+
+            <!-- Charset -->
+            <charset>UTF8</charset>
+            <!-- /Charset -->
+
+            <!-- Adapter -->
+            <adapter>mysql</adapter>
+            <!-- /Adapter -->
+
+            <!-- Driver -->
+            <driver>mysql</driver>
+            <!-- /Driver -->
+
+            <!-- Host -->
+            <host>localhost</host>
+            <!-- /Host -->
+
+            <!-- User -->
+            <user>pxsample</user>
+            <!-- /User -->
+
+            <!-- Password -->
+            <password>pxsample</password>
+            <!-- /Password -->
+
+            <!-- Database -->
+            <database>pxsample</database>
+            <!-- /Database -->
+
+            <!-- Prefix -->
+            <prefix></prefix>
+            <!-- /Prefix -->
+
+            <!-- Port -->
+            <port></port>
+            <!-- /Port -->
+
+            <!-- Socket -->
+            <socket></socket>
+            <!-- /Socket -->
+
+        </connection>
+        <!-- /default -->
+
+        <connection name="default2">
+
+            <!-- Charset -->
+            <charset>UTF8</charset>
+            <!-- /Charset -->
+
+            <!-- Adapter -->
+            <adapter>pgsql</adapter>
+            <!-- /Adapter -->
+
+            <!-- Driver -->
+            <driver>pgsql</driver>
+            <!-- /Driver -->
+
+            <!-- Host -->
+            <host>localhost</host>
+            <!-- /Host -->
+
+            <!-- User -->
+            <user>postgres</user>
+            <!-- /User -->
+
+            <!-- Password -->
+            <password>postgres</password>
+            <!-- /Password -->
+
+            <!-- Database -->
+            <database>myapp</database>
+            <!-- /Database -->
+
+            <!-- Prefix -->
+            <prefix></prefix>
+            <!-- /Prefix -->
+
+            <!-- Port -->
+            <port></port>
+            <!-- /Port -->
+
+            <!-- Socket -->
+            <socket></socket>
+            <!-- /Socket -->
+
+        </connection>
+
+        <!-- oracle -->
+        <connection name="default3">
+
+            <!-- Charset -->
+            <charset>UTF8</charset>
+            <!-- /Charset -->
+
+            <!-- Adapter -->
+            <adapter>oracle</adapter>
+            <!-- /Adapter -->
+
+            <!-- Driver -->
+            <driver>oci</driver>
+            <!-- /Driver -->
+
+            <!-- Host -->
+            <host>localhost</host>
+            <!-- /Host -->
+
+            <!-- User -->
+            <user>SCOTT</user>
+            <!-- /User -->
+
+            <!-- Password -->
+            <password>tiger</password>
+            <!-- /Password -->
+
+            <!-- Database -->
+            <database>127.0.0.1/myapp</database>
+            <!-- /Database -->
+
+            <!-- Prefix -->
+            <prefix></prefix>
+            <!-- /Prefix -->
+
+            <!-- Port -->
+            <port></port>
+            <!-- /Port -->
+
+            <!-- Socket -->
+            <socket></socket>
+            <!-- /Socket -->
+
+            <!-- NLS -->
+            <nls>
+                <date_format>yyyy-mm-dd hh24:mi:ss</date_format>
+                <timestamp_format>yyyy-mm-dd hh24:mi:ss</timestamp_format>
+            </nls>
+            <!-- /NLS -->
+
+        </connection>
+        <!-- /oracle -->
+
+    </database>
+    <!-- /データベース設定 -->
+
+</px>
