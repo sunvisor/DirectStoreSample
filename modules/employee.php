@@ -90,7 +90,6 @@ class employee extends xFrameworkPX_Model
                 $result = $result && $this->_updateOne( $rec );
             }
 
-//            $log->trace( print_r($result, true));
             return array(
                 'success' => $result,
                 'items' => $data
@@ -164,7 +163,7 @@ class employee extends xFrameworkPX_Model
     {
 
         $log = xFrameworkPX_Log::getInstance();
-        $log->trace(__FUNCTION__.' id '.$id);
+
         $where = array(
             'id = :id'
         );
