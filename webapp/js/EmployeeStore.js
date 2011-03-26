@@ -5,14 +5,29 @@
  * Time: 13:14
  * Copyright (C) Sunvisor 2011 All right reserved.
  */
-//Ext.namespace('Ext.remote');
 Ext.Direct.addProvider( Ext.app.REMOTING_API );
 
+/**
+ * DirectStore で更新をかけるためのWriterを生成
+ */
 var writer = new Ext.data.JsonWriter({
     encode: false,
     writeAllFields: true // write all fields, not just those that changed
 });
 
+/**
+ * Direct Store for Employee Table
+ *
+ * 対象テーブルの構造
+ * CREATE TABLE `employee` (
+ *  `id` int(11) NOT NULL AUTO_INCREMENT,
+ *  `name_kanji` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
+ *  `name_kana` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
+ *  `birth_date` date DEFAULT NULL,
+ *  PRIMARY KEY (`id`)
+ * );
+ *
+ */
 EmployeeStore = Ext.extend(Ext.data.DirectStore, {
 
     constructor: function(cfg) {

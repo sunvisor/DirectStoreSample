@@ -1,5 +1,5 @@
 /**
- * .
+ * index.js
  * User: sunvisor
  * Date: 11/03/03
  * Time: 20:27

@@ -9,6 +9,8 @@
  *
  * You should implement event handling and custom methods in this
  * class.
+ *
+ * メインウィンドウ - グリッド
  */
 
 WinMain = Ext.extend(WinMainUi, {
@@ -27,7 +29,7 @@ WinMain = Ext.extend(WinMainUi, {
         me.btnMainAdd.on('click', me.onBtnMainAdd, me);
         me.btnMainDelete.on('click', me.onBtnMainDelete, me);
         me.btnMainSave.on('click', me.onBtnMainSave, me);
-
+        // Store's Event Handler
         me.store.on('beforewrite', me.onStoreBeforeWrite, me)
         me.store.on('write', me.onStoreWrite, me)
 

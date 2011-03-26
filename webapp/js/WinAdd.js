@@ -9,6 +9,8 @@
  *
  * You should implement event handling and custom methods in this
  * class.
+ *
+ * データ追加ダイアログ
  */
 
 WinAdd = Ext.extend(WinAddUi, {

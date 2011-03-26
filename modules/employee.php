@@ -4,8 +4,16 @@
  * User: sunvisor
  * Date: 11/03/03
  * Time: 18:33
+ *
+ * 対象テーブルの構造
+ * CREATE TABLE `employee` (
+ *  `id` int(11) NOT NULL AUTO_INCREMENT,
+ *  `name_kanji` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
+ *  `name_kana` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
+ *  `birth_date` date DEFAULT NULL,
+ *  PRIMARY KEY (`id`)
+ * );
  */
-
 
 class employee extends xFrameworkPX_Model
 {
